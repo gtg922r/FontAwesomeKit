@@ -129,6 +129,11 @@
 	return iconImage;
 }
 
+- (UIImage *)imageWithSize:(CGSize)imageSize foregroundColor:(UIColor *)fgColor {
+    [self addAttribute:NSForegroundColorAttributeName value:fgColor];
+    return [self imageWithSize:imageSize];
+}
+
 - (void)fillBackgroundForContext:(CGContextRef)context backgroundSize:(CGSize)size
 {
     if (self.drawingBackgroundColor) {

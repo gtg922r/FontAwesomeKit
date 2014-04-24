@@ -137,6 +137,16 @@
  */
 - (UIImage *)imageWithSize:(CGSize)imageSize;
 
+/**
+ *  Draws the icon on an image and sets foreground color. The icon will be centered horizontally and vertically by default. You can set the drawingPostionAdjustment property to adjust drawing offset.
+ *
+ *  @param imageSize Height and width for the image.
+ *  @param fgColor Foreground color to set
+ *
+ *  @return An image with the icon.
+ */
+- (UIImage *)imageWithSize:(CGSize)imageSize foregroundColor:(UIColor *)fgColor;
+
 @end
 
 @interface UIImage (FAKAddon)
